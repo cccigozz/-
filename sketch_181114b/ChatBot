@@ -1,0 +1,28 @@
+name = "Python"
+weather = "sunny"
+
+responses = {
+  "what's your name?": "my name is {0}".format(name),
+  "what's today's weather?": "the weather is {0}".format(weather),
+  "default": "default message"
+}
+
+def respond(user_message):
+    if user_message in responses:
+        bot_message = responses[user_message]
+    else:
+        bot_message = responses['default']
+        
+    return bot_message
+    
+ while True:
+    user_message = input('Say Something:')
+    if user_message == 'bye':
+        break
+    print(respond(user_message))
+    
+   while traget:
+     use_message =  input('say nothing:')
+     
+
+ 
